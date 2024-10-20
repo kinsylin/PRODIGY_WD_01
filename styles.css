@@ -1,0 +1,98 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: yellowgreen;
+    
+}
+
+.nav {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ff5e5e;
+}
+
+
+.menu-sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    font-family: sans-serif;
+}
+
+.menu-sub-menu li {
+    padding: 10px 20px;
+}
+
+.menu-sub-menu li a {
+    color: #333;
+    font-size: 14px;
+    padding: 0;
+}
+
+.menu-sub-menu li a:hover {
+    color: #ff5e5e;
+}
+
+/* Menu Dropdown Hover */
+.menu:hover .menu-sub-menu {
+    display: block;
+}
+
+/* Icon Styles */
+.html-chevron {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.menu:hover .html-chevron {
+    transform: rotate(180deg);
+}
+
+.rose{
+    height: 150px;
+    width:150px;
+}
+
